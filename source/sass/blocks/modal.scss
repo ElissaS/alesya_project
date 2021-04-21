@@ -17,9 +17,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: $mobile-size;
-  border-top: 1px solid $gray;
-  box-shadow: 0 9px 8px -1px $gray;
+  width: $mobile-width;
+  border-top: 1px solid gray;
+  box-shadow: 0 9px 8px -1px gray;
   padding: 30px 30px 46px;
   background-color: $basic-white;
 
@@ -80,7 +80,7 @@
 }
 
 .modal__button {
-  border: 2px solid $gray;
+  border: 2px solid gray;
   padding: 18px 33px;
   font-size: 17px;
   line-height: 16px;
@@ -88,7 +88,7 @@
 
   &:hover,
   &:focus {
-    border: 2px solid $gray;
+    border: 2px solid gray;
     color: green;
     background-color: $basic-white;
   }

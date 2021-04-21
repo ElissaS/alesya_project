@@ -4,7 +4,7 @@
 
 .goods__wrapper {
   position: relative;
-  width: $mobile-size;
+  width: $mobile-width;
   margin: 0 auto;
   padding: 30px 30px 15px;
 
@@ -32,7 +32,7 @@
 }
 
 .goods__inner {
-  border: 1px solid $gray;
+  border: 1px solid gray;
   padding: 28px 26px 26px 27px;
 
   @media (min-width: $tablet-width) {
@@ -59,11 +59,11 @@
 
   &:hover .goods__inner,
   &:focus .goods__inner {
-    box-shadow: 0 9px 8px -1px $gray;
+    box-shadow: 0 9px 8px -1px gray;
   }
 
   &:active .goods__inner {
-    box-shadow: 0 6px 5px -1px $gray;
+    box-shadow: 0 6px 5px -1px gray;
   }
 
   @media (min-width: $tablet-width) {
@@ -123,7 +123,7 @@
   }
 
   &:active {
-    color: $gray;
+    color: gray;
   }
 
   @media (min-width: $tablet-width) {
@@ -151,7 +151,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  border-top: 1px solid $gray;
+  border-top: 1px solid gray;
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
@@ -181,7 +181,7 @@
 
   &:hover,
   &:focus {
-    fill: $gray;
+    fill: gray;
   }
 
   &:active {
