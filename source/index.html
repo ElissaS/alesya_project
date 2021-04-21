@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body class="body">
+  <div class="body__main-wrapper">
+<header></header>
+
+<main>
+  <section class="catalog-page__goods goods">
+    <div class="goods__wrapper">
+      <h2 class="goods__main-name visually-hidden">Список доступных товаров</h2>
+
+      <div class="goods__modal modal modal--catalog modal--hidden">
+        <div class="modal__container">
+          <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+            <h3 class="modal__title">Добавить в&nbsp;корзину</h3>
+            <p class="modal__text">Выберите размер:</p>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" id="size-s" name="size" type="radio" value="size-s"
+                  checked>
+                <label class="modal__button same-link-button" for="size-s">s</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" id="size-m" name="size" type="radio" value="size-m">
+                <label class="modal__button same-link-button" for="size-m">m</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" id="size-l" name="size" type="radio" value="size-l">
+                <label class="modal__button same-link-button" for="size-l">l</label>
+              </li>
+            </ul>
+            <button class="modal__order-link same-link-button" type="submit">Добавить</button>
+          </form>
+        </div>
+      </div>
+
+      <ul class="goods__list">
+        <li class="goods__item">
+          <a class="goods__good-link" href="good.html">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/catalog-rabbit-desktop.webp 1x, img/catalog-rabbit-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-rabbit-tablet.webp 1x, img/catalog-rabbit-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-rabbit-mobile.webp 1x, img/catalog-rabbit-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)"
+                srcset="img/catalog-rabbit-desktop.jpg 1x, img/catalog-rabbit-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-rabbit-tablet.jpg 1x, img/catalog-rabbit-tablet@2x.jpg 2x">
+              <img class="goods__image" src="img/catalog-rabbit-mobile.jpg" width="260" height="195"
+                srcset="img/catalog-rabbit-mobile@2x.jpg 2x" alt="Милый вязанный зайка в голубом костюмчике">
+            </picture>
+          </a>
+          <div class="goods__inner">
+            <div class="goods__info-container">
+              <a class="goods__good-link" href="good.html">
+                <h3 class="goods__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="goods__description">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="goods__for-price">
+              <p class="goods__price">1 200 руб.</p>
+              <a class="goods__cart-image-link" href="cart.html">
+                <svg class="goods__cart-image" width="21" height="18">
+                  <use xlink:href="img/icons/sprite.svg#cart"></use>
+                </svg>
+                <span class="visually-hidden">Положить в корзину вязанного зайку</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <a class="goods__good-link" href="good.html">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/catalog-laundry-cart-desktop.webp 1x, img/catalog-laundry-cart-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-laundry-cart-tablet.webp 1x, img/catalog-laundry-cart-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-laundry-cart-mobile.webp 1x, img/catalog-laundry-cart-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)"
+                srcset="img/catalog-laundry-cart-desktop.jpg 1x, img/catalog-laundry-cart-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-laundry-cart-tablet.jpg 1x, img/catalog-laundry-cart-tablet@2x.jpg 2x">
+              <img class="goods__image" src="img/catalog-laundry-cart-mobile.jpg" width="260" height="195"
+                srcset="img/catalog-laundry-cart-mobile@2x.jpg 2x"
+                alt="Вязанная молочно-розовая корзинка для белья с бельём внутри">
+            </picture>
+          </a>
+          <div class="goods__inner">
+            <div class="goods__info-container">
+              <a class="goods__good-link" href="good.html">
+                <h3 class="goods__title">Корзинка для белья</h3>
+              </a>
+              <p class="goods__description">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="goods__for-price">
+              <p class="goods__price">690 руб.</p>
+              <a class="goods__cart-image-link" href="cart.html">
+                <svg class="goods__cart-image" width="21" height="18">
+                  <use xlink:href="img/icons/sprite.svg#cart"></use>
+                </svg>
+                <span class="visually-hidden">Положить в корзину вязанную корзинку</span></a>
+            </div>
+          </div>
+        </li>
+        <li class="goods__item">
+          <a class="goods__good-link" href="good.html">
+            <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/catalog-big-cart-desktop.webp 1x, img/catalog-big-cart-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/catalog-big-cart-tablet.webp 1x, img/catalog-big-cart-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/catalog-big-cart-mobile.webp 1x, img/catalog-big-cart-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1150px)"
+                srcset="img/catalog-big-cart-desktop.jpg 1x, img/catalog-big-cart-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/catalog-big-cart-tablet.jpg 1x, img/catalog-big-cart-tablet@2x.jpg 2x">
+              <img class="goods__image" src="img/catalog-big-cart-mobile.jpg" width="260" height="195"
+                srcset="img/catalog-big-cart-mobile@2x.jpg 2x"
+                alt="Большая вязанная молочно-зелёная корзинка наполненная игрушками">
+            </picture>
+          </a>
+          <div class="goods__inner goods__inner--last">
+            <div class="goods__info-container">
+              <a class="goods__good-link" href="good.html">
+                <h3 class="goods__title">Большая корзинка для&nbsp;игрушек</h3>
+              </a>
+              <p class="goods__description">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="goods__for-price">
+              <p class="goods__price">1 500 руб.</p>
+              <a class="goods__cart-image-link" href="cart.html">
+                <svg class="goods__cart-image" width="21" height="18">
+                  <use xlink:href="img/icons/sprite.svg#cart"></use>
+                </svg>
+                <span class="visually-hidden">Положить в корзину большую вязанную корзинку для игрушек</span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer></footer>
+  </div>
+
+</body>
+</html>
