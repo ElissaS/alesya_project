@@ -1,13 +1,18 @@
 // fonts
 $font-stack: "Open Sans", "Arial", sans-serif;
 
-
 // Viewports
-$mobile-size: 320px;
-$mobile-width-only: 767px;
+$mobile-width: 320px;
+$mobile-width-max: 767px;
 $tablet-width: 768px;
-$desktop-width: 1150px;
+$teblet-width-max: 1023px;
+$desktop-width: 1024px;
 
 // colors
-$basic-white: #ffffff;
-$basic-black: #000000;
+$primary: #FE7865;
+$primary-hover: #F17D4B;
+$dark: #2C2E3F;
+$more-dark: #141517;
+$lighter: #FBF8F8;
+$basic-white: #fff;
+$basic-black: #000;
