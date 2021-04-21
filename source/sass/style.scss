@@ -6,7 +6,19 @@
 
 // header blocks
 @import "blocks/body.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/head-menu.scss";
+@import "blocks/site-list.scss";
+@import "blocks/page-header.scss";
 
-// main for goods
-@import "blocks/goods.scss";
+// main blocks
+@import "blocks/page-main.scss";
+
+// footer blocks
+@import "blocks/page-footer.scss";
+@import "blocks/next-trips.scss";
+@import "blocks/our-contacts.scss";
+@import "blocks/corporate-travel.scss";
+
+
 @import "blocks/modal.scss";

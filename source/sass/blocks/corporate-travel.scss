@@ -1,0 +1,24 @@
+.corporate-travel {
+  border-left: 1px solid $gray;
+  padding-left: 49px;
+}
+
+.corporate-travel__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $font-stack;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $more-dark;
+}
+
+.corporate-travel__description {
+  width: 319px;
+  margin: 0;
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: $more-dark-transarent;
+}

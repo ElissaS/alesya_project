@@ -5,14 +5,18 @@ $font-stack: 'Montserrat', sans-serif;
 $mobile-width: 320px;
 $mobile-width-max: 767px;
 $tablet-width: 768px;
-$teblet-width-max: 1023px;
-$desktop-width: 1024px;
+$tablet-width-max: 1023px;
+$desktop-width-min: 1024px;
+$desktop-width: 1920px;
 
 // colors
 $primary: #FE7865;
-$primary-hover: #F17D4B;
+$secondary: #F17D4B;
 $dark: #2C2E3F;
 $more-dark: #141517;
+$more-dark-transarent: rgba( 20, 21, 23, 0.5 );
+
 $lighter: #FBF8F8;
+$gray: #D7D9DF;
 $basic-white: #fff;
 $basic-black: #000;
