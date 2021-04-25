@@ -14,6 +14,7 @@
 }
 
 .our-contacts__email {
+  position: relative;
   display: block;
   margin-bottom: 19px;
   font-family: $font-stack;
@@ -22,9 +23,22 @@
   line-height: 17px;
   color: $primary;
   text-decoration: underline;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $basic-black;
+  }
+
+  &:focus .our-contacts__image-email,
+  &:hover .our-contacts__image-email,
+  &:active .our-contacts__image-email {
+    fill: $primary;
+  }
 }
 
 .our-contacts__phone {
+  position: relative;
   display: block;
   margin-bottom: 19px;
   font-family: $font-stack;
@@ -33,12 +47,31 @@
   line-height: 17px;
   color: $primary;
   text-decoration: underline;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $basic-black;
+  }
+
+  &:focus .our-contacts__image-phone,
+  &:hover .our-contacts__image-phone,
+  &:active .our-contacts__image-phone {
+    stroke: $primary;
+  }
 }
 
 .our-contacts__image-email {
+  position: absolute;
+  top: -1px;
+  left: -37px;
   fill: $gray;
 }
 
 .our-contacts__image-phone {
+  position: absolute;
+  top: -4px;
+  left: -32px;
+  stroke: $gray;
   fill: transparent;
 }

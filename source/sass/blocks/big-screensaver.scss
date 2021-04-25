@@ -1,0 +1,75 @@
+.big-screensaver {
+  min-width: $desktop-width-min;
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.big-screensaver__inner-for-picture {
+  height: 860px;
+  padding: 185px 30px 30px 1075px;
+  background-image: url("../img/background-main.jpg");
+  background-size: 1920px auto;
+  background-color: $background-greece;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-main@2x.jpg");
+    background-size: 1920px auto;
+  }
+
+  // @media (max-width: $tablet-width) {
+  //   height: 344px;
+  //   margin: 0 auto;
+  //   padding-top: 89px;
+  //   background-image: url("../img/background-main-tablet.jpg");
+  //   background-size: 768px auto;
+  //   background-color: $gray;
+  //   background-position: 50% 36%;
+  //   background-repeat: no-repeat;
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("../img/background-main-tablet@2x.jpg");
+  //     background-size: 768px auto;
+  //   }
+  // }
+
+}
+
+.big-screensaver__title {
+  width: 412px;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1px;
+  color: $basic-white;
+}
+
+.big-screensaver__description {
+  width: 376px;
+  margin: 0;
+  margin-bottom: 39px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+  color: $basic-white;
+}
+
+.big-screensaver__link-show-travel {
+  width: 340px;
+  text-align: left;
+}
+
+.big-screensaver__arrow {
+  vertical-align: middle;
+  margin-left: 115px;
+}

@@ -20,6 +20,7 @@
 }
 
 .main-nav__tel {
+  position: relative;
   display: block;
   padding: 5px;
   font-family: $font-stack;
@@ -34,4 +35,17 @@
   &:active {
     color: $primary;
   }
+  &:hover .main-nav__image-phone,
+  &:focus .main-nav__image-phone,
+  &:active .main-nav__image-phone {
+  stroke: $primary;
+  }
+}
+
+.main-nav__image-phone {
+  position: absolute;
+  top: 9px;
+  left: -30px;
+  stroke: $basic-black;
+  fill: transparent;
 }

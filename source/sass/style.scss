@@ -3,6 +3,7 @@
 @import "general/variables.scss";
 // @import "general/mixin.scss";
 @import "general/common.scss";
+@import "blocks/same-link-button.scss";
 
 // header blocks
 @import "blocks/body.scss";
@@ -13,6 +14,18 @@
 
 // main blocks
 @import "blocks/page-main.scss";
+@import "blocks/big-screensaver.scss";
+@import "blocks/trip-info.scss";
+@import "blocks/tabs-countries.scss";
+@import "blocks/places-to-visit.scss";
+@import "blocks/card-travel.scss";
+@import "blocks/tab.scss";
+@import "blocks/feedback.scss";
+@import "blocks/price.scss";
+@import "blocks/price-card.scss";
+@import "blocks/price-detail.scss";
+@import "blocks/more-questions.scss";
+@import "blocks/form.scss";
 
 // footer blocks
 @import "blocks/page-footer.scss";

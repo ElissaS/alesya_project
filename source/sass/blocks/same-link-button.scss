@@ -1,0 +1,23 @@
+.same-link-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 30px 40px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  color: $basic-white;
+  background-color: $primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $secondary;
+  }
+}

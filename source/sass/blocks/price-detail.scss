@@ -1,0 +1,89 @@
+.price-detail {
+  order: 1;
+  width: 299px;
+  padding-top: 117px;
+}
+
+.price-detail__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 53px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  color: $dark;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 99px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $primary;
+  }
+}
+
+.price-detail__description {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: $dark-a-bit-transparent;
+}
+
+.price-detail__contact-us-text {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 46px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $more-dark;
+}
+
+.price-detail__phone-link {
+  position: relative;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-left: 46px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $basic-black;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $secondary;
+  }
+
+  &:hover .price-detail__phone-image,
+  &:focus .price-detail__phone-image,
+  &:active .price-detail__phone-image {
+    stroke: $basic-black;
+  }
+
+}
+
+.price-detail__phone-image {
+  position: absolute;
+  top: 1px;
+  left: -41px;
+  stroke: $primary;
+  fill: transparent;
+}

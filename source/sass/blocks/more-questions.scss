@@ -1,0 +1,14 @@
+.more-questions {
+  min-width: $desktop-width-min;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 75px 363px 165px 387px;
+  background-image: url("../img/form-sunset-desktop.jpg");
+  background-size: 844px auto;
+  background-position: 36% 20%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-sunset-desktop@2x.jpg");
+  }
+}

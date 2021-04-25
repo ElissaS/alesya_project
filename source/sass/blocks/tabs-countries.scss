@@ -1,0 +1,82 @@
+.tabs-countries {
+  padding: 45px 405px 139px 375px;
+}
+
+.tabs-countries__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 110px;
+  list-style: none;
+
+  &::before {
+    position: absolute;
+    top: 50px;
+    left: -3px;
+    content: "";
+    display: block;
+    width: 899px;
+    height: 1px;
+    background-color: $dark-transparent;
+  }
+}
+
+.tabs-countries__tab {
+  margin-right: 39px;
+  padding: 5px 30px;
+  cursor: pointer;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: $dark-transparent;
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+
+// если нет js
+.tabs-countries--nojs .tabs-countries__content {
+  display: block;
+}
+
+.tabs-countries__content {
+  display: none;
+  z-index: 1;
+  padding: 10px;
+}
+
+
+// стили для показывания текущей вкладки контента
+
+.tabs-countries__tab.is-active {
+  color: $primary;
+}
+
+// .tabs-countries__content.is-active {
+//   // стили для активной вкладки контента
+//   color: $primary;
+// }
+
+.show-content {
+  display: block;
+}
+
+.is-active {
+  display: block;
+}
+
+.hide-content {
+  display: none;
+}

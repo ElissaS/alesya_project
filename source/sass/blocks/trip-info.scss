@@ -1,0 +1,14 @@
+.trip-info {
+  min-width: $desktop-width-min;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  background-image: url(../img/background-map.jpg);
+  background-size: 1444px auto;
+  background-position: 50% 33%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-map@2x.jpg");
+    background-size: 1444px auto;
+  }
+}

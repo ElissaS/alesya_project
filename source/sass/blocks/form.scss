@@ -1,0 +1,99 @@
+.form {
+  width: 656px;
+  min-height: 315px;
+  margin-left: auto;
+  padding: 50px 49px 44px;
+  background-color: $basic-white;
+  box-shadow: 0px 4px 30px 0px $form-shadow;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 11px;
+  text-align: center;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+  color: $more-dark;
+}
+//TODO: сделать проверку на введение правильного емайла
+
+.form__description {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $more-dark;
+}
+
+.form__container-inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form__input {
+  width: 269px;
+  margin-bottom: 5px;
+  padding: 16px 15px 15px;
+  border: 1px solid $dark-transparent;
+
+  &::placeholder {
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: left;
+    color: $more-dark;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $basic-black;
+  }
+
+  &--phone {
+    padding: 16px 15px 15px 51px;
+  }
+}
+
+.form__inner--phone {
+  position: relative;
+}
+
+//TODO: проставить всем картинкам дисплей блок
+
+.form__icon-star {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  display: block;
+  width: 7px;
+  height: 7px;
+}
+
+.form__icon-numeral {
+  position: absolute;
+  top: 15px;
+  left: 26px;
+  display: block;
+  width: 18px;
+  height: 19px;
+}
+
+.form__button {
+  width: 176px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 39px 17px 40px;
+  border: none;
+}

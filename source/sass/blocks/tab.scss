@@ -1,0 +1,88 @@
+.tab__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tab__inner {
+  margin-right: 100px;
+  // flex: 0 1 auto;
+}
+
+// TODO: write pic size in css
+
+// TODO: и переходе по якорю, нужный таб со страной не открывается
+// нужно сделать отслеживание клика по якорям, чтобы обработчик знал когда нажимают на якорь
+// и скрипт делал тоже самое что и при нажатии на таб тайтл
+
+.tab__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 53px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  letter-spacing: -1px;
+  color: $dark;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 99px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $primary;
+  }
+}
+
+.tab__description {
+  width: 370px;
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: $dark-a-bit-transparent;
+}
+
+.tab__link {
+  width: 252px;
+}
+
+.tab__image {
+  width: 430px;
+  height: 596px;
+
+  &--greece {
+    background-color: $background-greece;
+  }
+
+  &--albania {
+    background-color: $background-albania;
+  }
+
+  &--macedonia {
+    background-color: $background-macedonia;
+  }
+
+  &--montenegro {
+    background-color: $background-montenegro;
+  }
+
+  &--croatia {
+    background-color: $background-croatia;
+  }
+}
+
+.tab__feedback {
+  margin: -110px;
+}

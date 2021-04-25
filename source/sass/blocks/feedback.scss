@@ -1,0 +1,69 @@
+.feedback {
+  padding: 30px;
+  background-color: $basic-white;
+}
+
+.feedback__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.5px;
+  color: $dark;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 48px;
+    left: 0;
+    width: 68px;
+    height: 1px;
+    background-color: $primary;
+  }
+}
+
+.feedback__description {
+  width: 322px;
+  margin: 0;
+  margin-bottom: 44px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: $dark-a-bit-transparent;
+}
+
+.feedback__inner-author {
+  position: relative;
+}
+
+.feedback__author-name {
+  margin: 0;
+  margin-left: 54px;
+  text-align: left;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: $dark;
+}
+
+.feedback__author-image {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 37px;
+  height: 38px;
+  background-color: $background-author-image;
+}

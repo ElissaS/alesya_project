@@ -30,5 +30,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: $more-dark-transarent;
+  color: $more-dark-transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+  }
 }
