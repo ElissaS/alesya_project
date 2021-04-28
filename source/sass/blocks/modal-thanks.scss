@@ -1,0 +1,46 @@
+.modal-thanks {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 728px;
+  min-height: 444px;
+  margin: 0 auto;
+  padding: 179px 100px 100px 165px;
+  background-color: $lighter;
+  box-shadow: 0px 4px 30px 0px $form-shadow;
+}
+
+.modal-thanks__text {
+  width: 399px;
+  margin: 0;
+  text-align: center;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 43px;
+  color: $modal-text;
+}
+
+.modal-thanks--hidden {
+  display: none;
+}
+
+.modal-thanks__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/icons/modal-cross.svg");
+  background-color: $lighter;
+
+  &:hover {
+    border: 1px solid $gray;
+  }
+}

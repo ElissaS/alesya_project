@@ -18,12 +18,15 @@ $dark-transparent: rgba(44, 46, 63, 0.3);
 
 $more-dark: #141517;
 $more-dark-a-bit-transparent: rgba(20, 21, 23, 0.7);
+$more-dark-transparent-hover: rgba(20, 21, 23, 0.6);
 $more-dark-transparent: rgba( 20, 21, 23, 0.5 );
-
 $lighter: #FBF8F8;
 $gray: #D7D9DF;
 // form`s shadow
 $form-shadow: rgba(41, 54, 66, 0.1);
+
+// colors for modals
+$modal-text: #48494D;
 
 
 //backgrounds for images
@@ -34,5 +37,6 @@ $background-montenegro: #64944c;
 $background-croatia: #b19667;
 $background-author-image: #7b7e80;
 $basic-white: #fff;
+$basic-white-transparent: rgba(255, 255, 255, 0.7);
 $basic-black: #000;
 

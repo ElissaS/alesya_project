@@ -18,7 +18,6 @@
   line-height: 32px;
   color: $more-dark;
 }
-//TODO: сделать проверку на введение правильного емайла
 
 .form__description {
   margin: 0;
@@ -69,8 +68,6 @@
   position: relative;
 }
 
-//TODO: проставить всем картинкам дисплей блок
-
 .form__icon-star {
   position: absolute;
   top: 10px;
@@ -87,6 +84,7 @@
   display: block;
   width: 18px;
   height: 19px;
+  fill: $more-dark;
 }
 
 .form__button {
