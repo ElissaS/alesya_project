@@ -3,6 +3,14 @@
   align-items: center;
   width: $desktop-width;
   padding: 22px 375px 20px 381px;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $tablet-width;
+  }
 }
 
 .main-nav__wrapper-head {
@@ -35,10 +43,11 @@
   &:active {
     color: $primary;
   }
+
   &:hover .main-nav__image-phone,
   &:focus .main-nav__image-phone,
   &:active .main-nav__image-phone {
-  stroke: $primary;
+    stroke: $primary;
   }
 }
 
@@ -49,4 +58,57 @@
   display: block;
   stroke: $basic-black;
   fill: transparent;
+}
+
+.main-nav--closed .head-menu__toggle::before {
+  @media (max-width: $mobile-width) {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 20px;
+    height: 2px;
+    background-color: $primary;
+    box-shadow: 0 6px 0 0 $basic-black, 0 12px 0 0 $basic-black;
+  }
+}
+
+.main-nav--closed .head-menu__toggle:active::before {
+  @media (max-width: $mobile-width) {
+    background-color: fade($basic-black, 30%);
+    box-shadow:
+      0 6px 0 0 fade($basic-black, 30%), 
+      0 12px 0 0 fade($basic-black, 30%);
+  }
+}
+
+
+// крестик
+.main-nav--opened .head-menu__toggle {
+  @media (max-width: $tablet-width) {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: 10px;
+      width: 28px;
+      height: 2px;
+      background-color: $button-cross;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade($basic-black, 30%);
+    }
+  }
 }

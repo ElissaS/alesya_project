@@ -30,13 +30,24 @@ const modalThanksCloseButton = document.querySelector('.modal-thanks__close-butt
 const formSendContact = document.querySelector('.form');
 const formSendButton = document.querySelector('.form__button');
 
+// скрывает блоки в табах стран, если js работает
+tabContainer.classList.remove('tabs-countries--nojs');
+
 
 // активирование меню
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.add('main-nav--closed');
 
-// скрывает блоки в табах стран, если js работает
-tabContainer.classList.remove('tabs-countries--nojs');
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
+
 
 
 function hideTabsContent(a) {
@@ -118,7 +129,7 @@ showBuyModal(tabBuyLinks, modalBuyFormContainer);
 
 
 // показывает модальное окно "спасибо"
-const showThanksModal = function (evt) {
+const showThanksModal1 = function (evt) {
   evt.preventDefault();
   modalThanks.classList.remove("modal-thanks--hidden");
 }
@@ -152,19 +163,19 @@ const closeModal = function (closeButton, modalContainer) {
 closeModal(modalBuyCloseButtonForm, modalBuyFormContainer);
 closeModal(modalThanksCloseButton, modalThanks);
 
-formSendButton.addEventListener('submit', showThanksModal());
+// formSendButton.addEventListener('submit', showThanksModal());
 
-// function showThanksModal() {
-// if (modalBuyFormContainer !== null) {
-//   modalBuyForm.onsubmit = function (evt) {
-//     evt.preventDefault();
-//     modalBuyFormContainer.classList.add("modal-form--hidden");
-//     modalThanks.classList.remove("modal-thanks--hidden");
-//   }
-// }
-// formSendContact.onsubmit = function (evt) {
-//   evt.preventDefault();
-//   modalThanks.classList.remove("modal-thanks--hidden");
-// }
-// }
-// showThanksModal();
+function showThanksModal() {
+  if (modalBuyFormContainer !== null) {
+    modalBuyForm.onsubmit = function (evt) {
+      evt.preventDefault();
+      modalBuyFormContainer.classList.add("modal-form--hidden");
+      modalThanks.classList.remove("modal-thanks--hidden");
+    }
+  }
+  formSendContact.onsubmit = function (evt) {
+    evt.preventDefault();
+    modalThanks.classList.remove("modal-thanks--hidden");
+  }
+}
+showThanksModal();
