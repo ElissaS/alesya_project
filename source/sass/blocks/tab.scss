@@ -1,11 +1,25 @@
 .tab__container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+  }
 }
 
 .tab__inner {
   margin-right: 100px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0;
+    padding: 0 50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 21px;
+  }
 }
 
 // TODO: и переходе по якорю, нужный таб со страной не открывается
@@ -35,6 +49,18 @@
     height: 3px;
     background-color: $primary;
   }
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .tab__description {
@@ -49,10 +75,26 @@
   line-height: 28px;
   letter-spacing: -0.5px;
   color: $dark-a-bit-transparent;
+
+  @media (max-width: $tablet-width-max) {
+    width: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .tab__link {
   width: 252px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  @media (max-width: $tablet-width) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
 }
 
 .tab__image {
@@ -79,8 +121,14 @@
   &--croatia {
     background-color: $background-croatia;
   }
-}
 
-.tab__feedback {
-  margin: -110px;
+  @media (max-width: $tablet-width-max) {
+    width: 1023px;
+    height: 415px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 768px;
+    height: 415px;
+  }
 }

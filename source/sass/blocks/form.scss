@@ -52,6 +52,10 @@
     text-align: left;
     color: $more-dark;
   }
+  
+  &::-moz-placeholder, :-moz-placeholder {
+    opacity: 1;
+}
 
   &:hover,
   &:focus,

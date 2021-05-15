@@ -120,6 +120,8 @@ const server = (done) => {
     server: {
       baseDir: "build"
     },
+    tunnel: true,
+    online: true,
     cors: true,
     notify: false,
     ui: false,

@@ -1,6 +1,20 @@
 .feedback {
+  width: 382px;
+  margin: -110px;
   padding: 30px;
   background-color: $basic-white;
+
+  @media (max-width: $tablet-width-max) {
+    position: absolute;
+    bottom: -30px;
+    left: 320px;
+    margin: 0;
+    background: $basic-white;
+  }
+
+  @media (max-width: $tablet-width) {
+    left: 196px;
+  }
 }
 
 .feedback__title {

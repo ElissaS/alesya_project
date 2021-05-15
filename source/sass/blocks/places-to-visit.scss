@@ -1,8 +1,21 @@
 .places-to-visit {
-  min-width: $desktop-width-min;
-  max-width: $desktop-width;
+  width: $desktop-width;
   margin: 0 auto;
   padding: 199px 375px 47px;
+
+  @media (max-width: $tablet-width-max) {
+    width: $tablet-width-max;
+    padding: 80px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: $mobile-width;
+    padding: 108px 16px 40px;
+  }
 }
 
 .places-to-visit__title {
@@ -10,6 +23,7 @@
   width: 358px;
   margin: 0;
   margin-bottom: 64px;
+  text-align: left;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 600;
@@ -28,12 +42,31 @@
     height: 4px;
     background-color: $primary;
   }
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 45px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 
 .places-to-visit__description {
   width: 328px;
   margin: 0;
   margin-bottom: 56px;
+  text-align: left;
   font-family: $font-stack;
   font-style: normal;
   font-weight: 400;
@@ -41,13 +74,15 @@
   line-height: 28px;
   letter-spacing: -0.5px;
   color: $dark-a-bit-transparent;
-}
 
-.places-to-visit__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
 }

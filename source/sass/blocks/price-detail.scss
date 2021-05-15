@@ -2,6 +2,11 @@
   order: 1;
   width: 299px;
   padding-top: 117px;
+
+  @media (max-width: $tablet-width-max) {
+    width: auto;
+    padding-top: 0;
+  }
 }
 
 .price-detail__title {
@@ -26,6 +31,17 @@
     height: 3px;
     background-color: $primary;
   }
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .price-detail__description {
@@ -38,6 +54,12 @@
   font-size: 16px;
   line-height: 27px;
   color: $dark-a-bit-transparent;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .price-detail__contact-us-text {
@@ -51,10 +73,18 @@
   font-size: 22px;
   line-height: 34px;
   color: $more-dark;
+
+  @media (max-width: $tablet-width-max) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 }
 
 .price-detail__phone-link {
   position: relative;
+  display: block;
   margin: 0;
   margin-bottom: 10px;
   margin-left: 46px;
@@ -78,6 +108,20 @@
     stroke: $basic-black;
   }
 
+  @media (max-width: $tablet-width-max) {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $primary;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $basic-black;
+    }
+  }
 }
 
 .price-detail__phone-image {
@@ -87,4 +131,8 @@
   display: block;
   stroke: $primary;
   fill: transparent;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
 }

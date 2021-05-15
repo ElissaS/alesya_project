@@ -2,4 +2,29 @@
   display: flex;
   justify-content: space-between;
   padding: 100px 365px 88px 375px;
+
+  @media (max-width: $tablet-width-max) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 50px 20px;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+}
+
+
+.price__full-price {
+  @media (max-width: $tablet-width-max) {
+    order: 2;
+  }
+}
+
+.price__econom-price {
+  @media (max-width: $tablet-width-max) {
+    order: 3;
+  }
 }
